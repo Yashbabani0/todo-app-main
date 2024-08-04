@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+}
+.bg_mobile_light, .bg_mobile_dark,  {
+    width: 100%;
+    height: 100%;
+}
