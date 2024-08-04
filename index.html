@@ -3,54 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
-    <title>Frontend Mentor | Todo app</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <title>Image Switcher</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="bg_mobile_light">
-      <img src="./images/bg-mobile-light.jpg" alt="" />
+  <body class="light-mode">
+    <div class="image-container">
+      <img id="responsive-image" src="./images/bg-mobile-dark.jpg" alt="" />
     </div>
-    <div class="bg_mobile_dark" hidden>
-      <img src="./images/bg-mobile-dark.jpg" alt="" />
-    </div>
-    <div class="bg_pc_light" hidden>
-      <img src="./images/bg-desktop-light.jpg" alt="" />
-    </div>
-    <div class="bg_pc_dark" hidden>
-      <img src="./images/bg-desktop-dark.jpg" alt="" />
-    </div>
-    <main></main>
-    Todo
+    <!-- <button onclick="toggleMode()">Toggle Mode</button> -->
+    <main>
+      <div class="header">
+        <h1>TODO</h1>
+        <button onclick="toggleMode()"><img src="./images/icon-sun.svg" alt="" /></button>
+      </div>
+    </main>
 
-    <!-- Add dynamic number -->
-    items left All Active Completed Clear Completed Drag and drop to reorder
-    list
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <script src="script.js"></script>
   </body>
 </html>
